@@ -1,7 +1,14 @@
 remove_resources_display            catalog_controller.rb:820-829
+dead_method - defined in catalog_controller.rb, method is not sended anywhere 
 build_vmdb_tree                     ops_controller/db.rb:84-85
+dead_method - no usage find in files
 delete_ns                           miq_ae_class_controller.rb:2054-2056
+undead_method - used as a button, in app/controllers/miq_ae_class_controller.rb
 build_ot_tree                       catalog_controller.rb:2133-2134
+no usage found - dead_method
 build_query_for_warn                miq_task_controller.rb:314-315
+dead_method - no usage found, only method definition found
 init_show_ems                       ems_common.rb:18-21
+this method is made an alias, then used and called in app/controllers/mixins/generic_show_mixin.rb
 edit_domain                         miq_ae_class_controller.rb:464-466
+method used as button (as one of allowed actions)- undead method
