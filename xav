@@ -1,7 +1,18 @@
 build_reports_tree                  report_controller/reports.rb:252-254
+	alive - called from spec/controllers/report_controller_spec.rb#replace_right_cell
 new_ems_path                        ems_block_storage_controller.rb:30-31
+	alive - used in many controllers as defined standard
+	      - found in app/controllers/mixins/ems_common_angular.rb#create_ems_button_add
 deletetemplates                     pxe_controller/pxe_customization_templates.rb:149-150
+	dead
 build_old_dialogs_tree              miq_ae_customization_controller.rb:489-490
+	alive - honestly, I see there many functions using “old_dialogs_tree” so I guess it isn`t so easy to get rid of it
+	      - so while build_old_dialogs_tree is dead, whole code is still working also with old_dialogs_tree
+	      - e.g. spec/controllers/miq_ae_customization_controller/old_dialogs_spec.rb:14,16,40,41, spec/controllers/miq_ae_customization_controller_spec.rb:156,174, app/views/miq_ae_customization/_old_dialogs_folders.html.haml:7
 ap_delete                           ops_controller/settings/analysis_profiles.rb:375-424
+	alive - app/helpers/application_helper/toolbar/scan_profile_center.rb:22 (button parameter)
+	      - app/helpers/application_helper/toolbar/scan_profiles_center.rb:38 (button parameter)
 build_query_for_queued              miq_task_controller.rb:302-303
+	alive - might be used as parameter in app/controllers/miq_task_controller.rb#tasks_condition:252
 get_detail_sort_col                 vm_common.rb:1746-1767
+	dead
