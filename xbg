@@ -1,7 +1,14 @@
 build_dialogs_tree                  miq_ae_customization_controller.rb:493-494
+   dead
 SELECT_EVENT_TYPE                   application_controller/timelines/options.rb:2
+   alive - called from app/views/layouts/_tl_options.html.haml line 2
 create_finished                     cloud_object_store_container_controller.rb:80-96
+   alive - it it in :actions (floating_ip_controller, host_aggregate_cotroller...)
 new_ems_path                        ems_cinder_controller.rb:26-27
+   defined in more files, used in mixins/ems_common_angular.rb line 185, not sure if it is alive or dead, i wouldnt delete it 
 vm_chargeback                       mixins/chargeback_preview.rb:4-28
+   alive - called from vm_common.rb line 1543 
 ems_path                            ems_object_storage_controller.rb:25-27
+   same as new_ems_path, defined in more places, used in mixins/ems_commons_angular.rb line 46
 ap_host_edit                        ops_controller/settings/analysis_profiles.rb:206-209
+   alive -  used in ops_controller.rb in buttons line 62
