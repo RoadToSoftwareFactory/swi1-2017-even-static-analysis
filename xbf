@@ -1,7 +1,24 @@
 rbac_role_copy                      ops_controller/ops_rbac.rb:83-85
+	alive - called from app/controllers/ops_controller.rb
+			    app/helpers/application_helper/toolbar/user_role_center.rb
+			    app/helpers/application_helper/toolbar/user_roles_center.rb
+
 dialog_resource_remove              miq_ae_customization_controller/dialogs.rb:304-318
+	alive - called from app/controllers/miq_ae_customization_controller.rb
+			    app/helpers/application_helper/toolbar/dialog_center.rb
+
 automation_manager_provider_tag     application_controller/tags.rb:27-28
+	dead
+
 dvswitches_list                     infra_networking_controller.rb:254-261
+	dead
+
 ems_path                            ems_infra_controller.rb:21-22
+	alive - called from app/controllers/mixins/ems_common_angular.rb
+		        
+
 service_retire                      service_controller.rb:238-241
+	alive - called from app/controllers/mixins/actions/vm_actions/retire.rb
+
 init_server_options                 application_controller.rb:924-942
+	dead
