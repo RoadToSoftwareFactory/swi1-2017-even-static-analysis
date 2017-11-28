@@ -1,7 +1,14 @@
 update_finished                     cloud_tenant_controller.rb:156-177
+ - is called in line 151 in initiate_wait_for_task 
 collect_current_logs                ops_controller.rb:87-89
+ - is called in generic_x_button in explorer.rb via send()
 create_finished                     floating_ip_controller.rb:77-94
+ - is called in line 66 in initiate_wait_for_task
 scan_history                        vm_common.rb:853-879
+ - is called in line 886
 rbac_group_add                      ops_controller/ops_rbac.rb:64-66
+ - is called in ops_controller_spec.rb in line 29
 display_based_volumes               cloud_volume_snapshot_controller.rb:16-17
+ - is called in generic_show_mixin.rb in line 133
 tagging_build_tags_pulldown         application_controller/tags.rb:190-194
+ - it can be dead method
