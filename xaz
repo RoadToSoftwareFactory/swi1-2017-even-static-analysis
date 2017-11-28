@@ -1,7 +1,20 @@
 create_finished                     cloud_tenant_controller.rb:99-119
+metoda zije, retezec create_finished je volany v mnoha souborech jako :action =>"create_finished" naprikald v soubor app/controllers/auth_key_pair_cloud_controller.rb radek 117 
+
 build_query_for_error               miq_task_controller.rb:310-311
+metoda je mrtva, je pouze definovana v mig_task_controller.rb na radku 310 
+
 rbac_user_delete                    ops_controller/ops_rbac.rb:288-330
+metoda zije, je soucasti OPS_X_BUTTON_ALLOWED_ACTION (ops_controller.rb radek 18), ktery je volan v x_button na radku 94 
+
 pxe_server_delete                   pxe_controller/pxe_servers.rb:151-153
+metoda zije, je soucasti PXE_XBUTTON_ALLOWED_ACTION (pxe_controller.rb radek 13), ktery je volan v x_button na radku 33
+
 change_subtab                       ops_controller.rb:211-213
+metoda je mrtva, je pouze definovana v ops_controller.rb na radku 212
+
 iso_datastore_tree_select           pxe_controller/iso_datastores.rb:5-13
+metoda je mrtva, je pouze definovana v iso_datastores.rb radek 5
+
 profile_toggle                      vm_common.rb:655-674
+metoda je mrtva, je pouze definovana v souborech: policy_support.rb na radku 130, vm_common.rb na radku 655
