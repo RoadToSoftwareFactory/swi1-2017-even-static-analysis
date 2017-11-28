@@ -1,7 +1,20 @@
 snapshot_create_finished            cloud_volume_controller.rb:553-572
+- Method is passed as a parameter to initiate_wait_for_task method (defined in wait_for_task.rb), therefore it should NOT be deleted.
+
 cb_docker_image_labels              report_controller/reports/editor.rb:1459-1460
+- Only one occurence of this method name string was found in whole project (also checked string concatenation), therefore it actually CAN be a dead method!!!
+
 rbac_tenant_add                     ops_controller/ops_rbac.rb:97-102
+- Method is passed as a part of a hash OPS_X_BUTTON_ALLOWED_ACTIONS to method generic_x_button defined in explorer.rb, therefore it should NOT be deleted.
+
 create_finished                     host_aggregate_controller.rb:150-168
+- Method is passed as an action parameter to initiate_wait_for_task method (defined in host_aggregate_controller.rb), therefore it should NOT be deleted.
+
 widget_copy                         report_controller/widgets.rb:40-64
+- Method is used as a part of a hash REPORT_X_BUTTON_ALLOWED_ACTIONS to method generic_x_button defined in explorer.rb, therefore it should NOT be deleted.
+
 textual_provisioning_group_list     service_controller.rb:209-210
+- Method is used in view to render a partial layouts/textual_groups_tabs, where it is passed as textual_group_list, therefore it should NOT be deleted.
+
 reload_server_tree                  ops_controller/diagnostics.rb:704-715
+- Method is passed as a part of hash OPS_X_BUTTON_ALLOWED_ACTIONS to method generic_x_button defined in explorer.rb, therefore it should NOT be deleted.
