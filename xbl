@@ -1,7 +1,7 @@
-format_timezone_value_for_drift     application_controller/compare.rb:341-344
-build_export_tree                   report_controller.rb:377-378
-pxe_server_tree_select              pxe_controller/pxe_servers.rb:5-13
-create_finished                     network_router_controller.rb:134-150
-customization_template_copy         pxe_controller/pxe_customization_templates.rb:58-61
-display_block_storage_managers      ems_common.rb:56-57
-attach_finished                     vm_cloud_controller.rb:77-101
+format_timezone_value_for_drift     application_controller/compare.rb:341-344             not dead, called from compare
+build_export_tree                   report_controller.rb:377-378                          dead, only defined
+pxe_server_tree_select              pxe_controller/pxe_servers.rb:5-13                    dead, only defined
+create_finished                     network_router_controller.rb:134-150                  not dead, initiatw_wait_for_task from multiple
+customization_template_copy         pxe_controller/pxe_customization_templates.rb:58-61   not dead, called from pxe_controller/from customization_template_center
+display_block_storage_managers      ems_common.rb:56-57                                   dead, only defined
+attach_finished                     vm_cloud_controller.rb:77-101                         not dead, initiate_wait_for_task called from cloud_volumu_controller/fromvm_cloud_volume_controller
