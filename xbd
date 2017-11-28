@@ -1,7 +1,23 @@
 display_tree_resources              host_controller.rb:31-42
+	probably dead, but it has two aliases “display_network” and “display_network” which aren’t used anywhere else.
+
 build_svccat_tree                   catalog_controller.rb:2123-2124
+	probably dead, because it has only its def.
+
 display_resource_pools              mixins/generic_show_mixin.rb:164-165
+	probably dead, because it has only its def.
+
 build_storage_tree                  storage_controller/storage_d.rb:34-35
+	probably dead, because it has only its def.
+
 vm_publish                          application_controller.rb:1947-1948
+	probably alive, found it as a parameter (:vm_publish) in method “button” in:
+			- helpers/application_helper/toolbar/vm_infras_center.rb ROW 174	
+			- helpers/application_helper/toolbar/x_vm_center.rb ROW 118
+
 display_playbooks                   ansible_repository_controller.rb:97-98
+	probably dead, because it has only its def.
+
 policy_copy                         miq_policy_controller/policies.rb:117-135
+	probably alive, found it as a parameter (:policy_copy) in method “button” in helpers/application_helper/toolbar/miq_policy_center.rb ROW 18
+	the other occurences are just in bigger string or bigger parameter called :condition_policy_copy
