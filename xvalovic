@@ -1,0 +1,25 @@
+undead_method render_report_data                  application_controller/report_downloads.rb:48-71
+	alive - app/helpers/application_helper/toolbar/report_view.rb:37-51
+			app/assets/javascripts/miq_application.js:1423-1425
+			spec/javascripts/miq_application_spec.js:43-51
+
+dead_method widget_delete                       report_controller/widgets.rb:122-134
+	dead - defined buttons but never used in view or as method call.
+
+
+undead_method process_resourcepools               application_controller/ci_processing.rb:676-699
+	alive - called by on app/controllers/resource_pool_controller.rb:43 through app/controllers/application_controller/ci_processing.rb:676
+
+
+undead_method pxe_image_type_delete               pxe_controller/pxe_image_types.rb:118-120
+	defined - button defined but never used to call method
+
+undead_method ems_path                            ems_datawarehouse_controller.rb:30-31
+	alive - used app/controllers/mixins/ems_common_angular.rb:46
+
+
+dead_method ab_button_delete                    application_controller/buttons.rb:138-166
+	dead - buttons defined but probably never used in view
+
+udead_method new_ems_path                        ems_cloud_controller.rb:25-26
+	alive - used in app/controllers/mixins/ems_common_angular.rb:185 via app/controllers/mixins/ems_common_angular.rb:111-168
