@@ -1,7 +1,8 @@
-saved_report_delete                 report_controller/saved_reports.rb:86-109
-display_persistent_volumes          ems_common.rb:72-73
-build_pxe_servers_tree              pxe_controller/pxe_servers.rb:453-454
-ab_button_new                       application_controller/buttons.rb:170-172
-deleteinstances                     miq_ae_class_controller.rb:1972-1990
-storage_delete                      storage_controller.rb:325-326
-new_ems_path                        ems_network_controller.rb:26-27
+
+saved_report_delete - metoda sa pouziva - volanie v controleru (report_controller.rb)                 report_controller/saved_reports.rb:86-109
+display_persistent_volumes - vypada ako mrtva metoda, je len difinovana, nikde sa nevola         ems_common.rb:72-73
+build_pxe_servers_tree  -vypada ako  mrtva metoda, len definovana, nikde sa nevola            pxe_controller/pxe_servers.rb:453-454 
+ab_button_new - nie je mrtva, vola sa na mnoha miestach, napr. v catalog controlleru, pri mnohych akciach                     application_controller/buttons.rb:170-172
+deleteinstances  - vola sa v miq_ae_class_controller.rb                   miq_ae_class_controller.rb:1972-1990
+storage_delete  - vola sa v mnoho pripadoch, napr. v ems_common.rb                    storage_controller.rb:325-326
+new_ems_path - asi v pohode, komplikovany kod, pouziva sa pri breadcrumb                        ems_network_controller.rb:26-27
