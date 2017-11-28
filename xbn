@@ -1,7 +1,14 @@
 ab_group_new                        application_controller/buttons.rb:13-15
+	alive - used in various conditions (for me hard to understandable), and also used in some buttons
 refresh_server_summary              ops_controller/diagnostics.rb:539-542
+	alive - used as paramater in button_x
 service_retire_now                  service_controller.rb:244-247
+	alive - used in locale/ManageIQ_UI_Classic.pot, 
 ems_path                            ems_swift_controller.rb:21-23
+	alive - used in Mixins EmsCommonAngular
 service_tag_edit                    service_controller.rb:232-235
+	alive - used in controller as inside the generic button_x
 git_refresh                         miq_ae_class_controller.rb:2613-2659
+	alive - used in class ApplicationHelper inside generic button
 schedule_add                        ops_controller/settings/schedules.rb:30-33
+	alive - not sure if it is true but inside the button_x and there is also a hardcore condition 
