@@ -1,0 +1,20 @@
+db_delete                           report_controller/dashboards.rb:108-121
+used in hash and also as function parameter
+
+tl_toggle_button_enablement         dashboard_controller.rb:725-731
+suspicious 'cos of function calling helper_method(:toggle_button_enablement)
+
+build_customization_templates_tree  pxe_controller/pxe_customization_templates.rb:263-264
+looks like can be deleted
+
+hosts_subsets                       ems_cluster_controller.rb:101-126
+looks like can be deleted
+
+show_ems_folders                    ems_common.rb:35-47
+looks like can be deleted
+
+delete_pxe_image_types              pxe_controller/pxe_image_types.rb:152-153
+looks like can be deleted
+
+find_chart_path                     services/charts_layout_service.rb:32-45
+doesn't exist
